@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Назар  Бестужев](https://up.htmlacademy.ru/htmlcss/27/user/1283767).
-* Наставник: [Анна Лисененкова].(https://htmlacademy.ru/profile/ankhena)
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
