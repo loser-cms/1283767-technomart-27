@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Назар  Бестужев](https://up.htmlacademy.ru/htmlcss/27/user/1283767).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисенкова].(https://htmlacademy.ru/profile/ankhena)
 
 ---
 
@@ -13,12 +13,12 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 ### Памятка
 
 #### 1. Зарегистрируйтесь на Гитхабе
-*** зарегистрировался)
+
 
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 
 #### 2. Создайте форк
-*** создал))
+
 
 [Откройте мастер-репозиторий](https://github.com/htmlacademy-htmlcss/1283767-technomart-27) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
@@ -38,7 +38,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 #### 4. Начинайте обучение!
 
-пробую вносить изменения..try to change somethimg
+
 ---
 
 <a href="https://htmlacademy.ru/intensive/htmlcss"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/htmlcss/logo-for-github-2.png"></a>
