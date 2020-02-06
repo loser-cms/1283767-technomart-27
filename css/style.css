@@ -1,5 +1,6 @@
 body {
    background-color: white;
+   box-sizing:border-box;
 }
 
 a {
@@ -14,6 +15,13 @@ a {
    line-height: 18px;
    text-align: center;
    color: white;
+}
+
+.button:hover {
+   background-color: #ca2c37;
+}
+.button:active {
+   background-color: #ba2732;
 }
 
 header {
@@ -60,6 +68,15 @@ header p {
    color: #000000;
 }
 
+.login a:hover {
+   color:#ee3643;
+}
+.button-login a:active,
+.login a:active {
+   color:rgba(0, 0, 0, 0.3);
+}
+
+
 nav {
    font-size: 17px;
    line-height: 17px;
@@ -69,6 +86,14 @@ nav {
 }
 nav ul {
    list-style: none;
+}
+.services-button button:hover,
+nav li:hover {
+   background-color:#293449;
+}
+.services-button button:active,
+nav li:active {
+   background-color:#1d2739;
 }
 
 
@@ -110,7 +135,7 @@ main h2 {
    background-color: #ffbf47;
 }
 .product-menu h3 {
-   font-size:24;
+   font-size: 24px;
    line-height: 30px;
    font-weight: bold;
    color: white;
@@ -119,6 +144,12 @@ main h2 {
 
 .product-menu a {
    background-color: rgba(0, 0, 0, 0.1);
+}
+.product-menu a:hover {
+   background-color: rgba(0, 0, 0, 0.2);
+}
+.product-menu a:active {
+   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .gallery h3 {
@@ -157,6 +188,17 @@ main h2 {
    line-height: 18px;
    color: #999999;
    text-align: center;
+}
+.new-price {
+   font-size: 17px;
+   line-height: 18px;
+}
+
+.popular-goods li:hover {
+   box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
+}
+.popular-manufacturer li:hover {
+   box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .services {
@@ -248,14 +290,30 @@ footer a {
    color: white;
    font-size: 14px;
 }
+.button.buy:hover{
+   background-color: #5fbb2d;
+}
+.button.buy:active{
+   background-color: #518534;
+   box-shadow: 0px 3px #518534;
+}
+
 
 .button.like {
    font-size: 14px;
-   text-align: left;
+   text-align: center;
    color: #32425c;
    
-   background-color:#63a63e;
-   box-shadow: 0px 3px #367315;
+   background-color:white;
+   border: 3px solid #63a63e; 
+}
+.button.like:hover {
+   background-color:white;
+   border: 3px solid #32425c; 
+}
+.button.like:active {
+   background-color:white;
+   border: 3px solid rgba(50, 66, 92, 0.3);; 
 }
 
 .sorting {
@@ -269,11 +327,10 @@ footer a {
    line-height: 18px;
    text-align: left;
    color: rgba(0, 0, 0, 0.3);
+   
    text-transform: uppercase;
 }
-.sorting .active {
-   color: red;
-}
+
 .filters h4{
    font-family: 'PT Sans', 'Arial', sans-serif;
    font-weight: 400;
@@ -305,7 +362,7 @@ footer a {
 }
 
 .filters button, 
-.pagination-list a{
+.pagination-list a {
    font-family: 'PT Sans', 'Arial', sans-serif;
    font-weight: 400;
    font-size: 13px;
@@ -314,14 +371,13 @@ footer a {
    color: black;
    text-transform: uppercase;
    
-   background-color:white;
-   border: 1px solid #f7f3ec;
+   border: 1px solid #e5e5e5;
 }
 
 .pagination-item-current{
    background-color:#ee3643;
    color: white;
-   border: 1px solid #ee3643;
+   border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .catalog h2{
@@ -333,27 +389,98 @@ footer a {
 }
 
 
+/* cтилизация кнопок */
+.product-order input {
+   background-color:rgba(0, 0, 0, 0);
+   color: white;
+   border-color: rgba(0, 0, 0, 0);
+}
+
+.product-order a:hover {
+   background-color: #212a3a;
+}
+
+.product-order input:hover {
+   background-color: #212a3a;
+}
+
+.product-order .order:hover {
+   background-color: #5fbb2d;
+}
+
+.product-order a:active {
+   background-color: #161d29;
+}
+
+.product-order .order:active {
+   background-color: #518534;
+}
+
+.product-order input:focus{
+   background-color: white;
+   color: black;
+   content: "Перфоратор";
+}
 
 
+.a-logo {
+   width: 220px;
+   height: 47px;
+   background-color:#ee3643;
+   box-shadow: 0px 5px rgba(0, 0, 0, 0.24)
+}
+.product-order img {
+   background-color:#ee3643;
+}
 
 
+.user {
+   border-top: 7px solid #ee3643;
+}
+.user input:hover,
+.user textarea:hover{
+   border: 1px solid #b5b5b5;
+}
+
+.user input:focus,
+.user textarea:focus{
+   border: 1px solid #ee3643;
+}
 
 
+.pagination-list a:hover{
+   border-color: #bdc6ca;
+}
 
+.sorting a:hover {
+   color: black;
+   border-bottom: 1px solid #ee3643;
+}
 
+.sorting a:active {
+   color: #ee3643;
+}
 
+.pagination-list a:hover{
+   border-color: #bdc6ca
+}
 
+.pagination-list a:active{
+   border-color: #ee3643;
+}
 
+.pagination-current {
+   color: white;
+   background-color: #ee3643; 
+   border-color: #ee3643;
+}
 
-
-
-
-
-
-
-
-
-
+.copyright a:hover {
+   text-decoration:underline;
+}
+.copyright a:active {
+   color:#ee3643;
+}
 
 
 

@@ -4,23 +4,21 @@
     <meta charset="utf-8">
      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
      <link href="css/normalize.css" rel="stylesheet">
-     <link href="style.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
      <header>
            <div class="product-order">
-                <a href="#"><img class="logo" src="img/techno.svg" width="109" height="19" alt="логотип"></a>
-                <a href="#">Поиск</a>
+                <div class="a-logo"><a href="index.html" class="logo" ><img src="img/techno.svg" width="109" height="19" alt="логотип"></a></div>
+                <form action="https://echo.htmlacademy.ru" method="get" name="search">
+                    <input type="search" name="search" value="Поиск:">
+                </form>
                 <a href="#">Закладки:0</a>
                 <a href="#" class="to-buy">Корзина10</a>
                 <a href="#" class="order">Оформить заказ</a>
              </div>
             
-              <form action="https://echo.htmlacademy.ru" method="get" name="search">
-                  <input type="search" name="search" placeholder="Поиск">
-               </form>
-        
             <p class="shop-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
 
             <div class="address-header">
@@ -32,7 +30,7 @@
            <a href="#" aria-label="ведёт на профайл">Равшан Джамшутович</a>
            <a href="#">Выход на страницу деавторизации</a>
         </div>
-        <div class="my-account">
+        <div class="my-account login">
             <ul>
                <li><a href="#">Мои заказы</a></li>
                <li><a href="#">Личный кабинет</a></li>
@@ -141,7 +139,7 @@
             <div class="sorting">
               <h4>Сортировка</h4>
             <ul>
-              <li><a href="#" class="active">По цене</a></li>
+              <li><a href="#">По цене</a></li>
               
               <li><a href="#">По типу</a></li>
               
@@ -192,7 +190,7 @@
         
         <div class="pagination-list">
         <ul>
-           <li class="pagination-item-current"><a>1</a></li>
+           <li class="pagination-current"><a>1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
          </ul>

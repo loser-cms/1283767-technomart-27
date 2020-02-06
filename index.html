@@ -5,21 +5,20 @@
     <title>HTML Academy: Техномарт</title>
      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
      <link href="css/normalize.css" rel="stylesheet">
-     <link href="style.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
        <header>
             <div class="product-order">
-                <a href="#"><img class="logo" src="img/techno.svg" width="109" height="19" alt="логотип"></a>
-                <a href="#">Поиск</a>
+                <a href="#" class="logo"><img src="img/techno.svg" width="109" height="19" alt="логотип"></a>
+               <form action="https://echo.htmlacademy.ru" method="get" name="search">
+                <input type="search" name="search" value="Поиск:">
+             </form>
                 <a href="#">Закладки:0</a>
                 <a href="#">Корзина:0</a>
                 <a href="#" class="order">Оформить заказ</a>
              </div>
-               
-             <form action="https://echo.htmlacademy.ru" method="get" name="search">
-                <input type="search" name="search" placeholder="Поиск">
-             </form> 
+          
           
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
             
@@ -30,13 +29,15 @@
            
             
             
-            <div class="button-login">
-              <a href="#"  aria-label="переход на страницу входа">Войти</a>
+            <div class="button-login login">
+              <a href="#"  aria-label="переход на страницу входа"><img src="img/icon-login.svg"
+              class="icon-login">Войти</a>
                <a href="#" >Регистрация</a>
             </div>
             
             
             <nav class="main-navigation">
+               <h2 class="visually-hidden">Навигация</h2>
                <ul>
                   <li><a href="#">Главная</a></li>
                   <li><a href="#">Компания</a></li>
@@ -156,7 +157,7 @@
                   <button type="button" class="active">Доставка</button>
                   
                   <button type="button" >Гарантия</button>
-                  
+               
                   <button type="button" >Кредит</button>
                </div>
                
@@ -228,7 +229,7 @@
              <label for="letter">Текст письма:</label>
              <textarea name="message" placeholder="В свободной форме"></textarea>
              
-             <input type="submit">
+             <input type="submit" class="button">
           </form>
           
     </main>
