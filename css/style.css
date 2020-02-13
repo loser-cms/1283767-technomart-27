@@ -1,6 +1,137 @@
 body {
+   background-color: white}
+
+a {color:white;
+text-decoration: none}
+header {
+   width: 100%;
+   height: auto;
+   background-color: #f4f7f9;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+padding-bottom: 60px}
+
+.header-top {
+   width:100%;
+   background-color: #293449;}
+.logo{display: block;
+   background-color: #ee3643;
+   padding: 15px 55px;
+   box-shadow: 0px 5px black
+}
+.cl1 {
+   width:940px;
+   padding: 0px 10px;
+   margin: 0 auto;
+   display: flex;
+   align-items:center;
+   flex-wrap: wrap;
+}
+.likes,.to-buy {padding-left: 50px;
+    position: relative;
+}
+.likes {
+   margin-left:auto;
+}
+.likes::before {content: "";
+position: absolute;
+   left: 17px;
+   width: 16px;
+   height: 18px;
+   background-image: url('img/icon-bookmark.svg');
+   background-repeat: no-repeat;
+   background-position: 0 0;
+}
+ .to-buy::before {content: "";
+position: absolute;
+   left: 17px;
+   width: 16px;
+   height: 18px;
+   background-image: url('img/icon-cart.svg');
+   background-repeat: no-repeat;
+   background-position: 0 0;
+}
+.order-button {background-color: red;}
+
+.header-between {
+   background-color: #f4f7f9;
+   width:940px;
+   min-height:50px;
+   padding: 45px 10px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.header-between p {width: 196px}
+.nav {
+   background-color:#32425c;
+   width:940px;
+   min-height:50px;
+   padding: 0px 10px;
+   box-shadow: 0px 5px #293449;
+}
+.nav ul {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around
+}
+.nav a {display: block;}
+
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 940px;
+   margin: auto;
+   padding-top: 60px;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+section {
+   background-color: red;
+   width: 100%;
+   min-height: 200px;
+}
+.first-section {
+   display: flex;
+   min-height: 409px;
+   width: 100%;
+   flex-direction: column;
+   margin-bottom: 53px;
+   justify-content: space-between;
+}
+.column1 {
+   display: flex;
+   justify-content: space-between;
+}
+.column2 {
+   display: flex;
+   justify-content: space-between;
+ }
+.small-column {display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+ .menu {
+    width: 300px;
+    min-height: 123px;
+   background-color:aqua;
+}
+.gallery {
+   width: 620px;
+   min-height: 266px;
+   background-color: sandybrown;
+   background-image: url(img/slide-image1.jpg);
+   background-repeat: no-repeat;
+}
+
+/*body {
    background-color: white;
    box-sizing:border-box;
+   width: 940px;
+   padding: 0px 10px;
 }
 
 a {
@@ -24,7 +155,7 @@ a {
    background-color: #ba2732;
 }
 /*вся шапка*/
-header {
+/* header {
    font-family: 'Cuprum', 'Arial', sans-serif;
    font-weight: 400;
    color: white;
@@ -33,24 +164,19 @@ header {
    line-height: 18px;
    
    background-color: #f4f7f9;
-   
-   display: flex;
-   flex-direction: column;
    padding-bottom: 60px;
 }
 
 /*верхняя строка*/
-.product-order {
+/*.product-order {
    background-color: #293449;
    width: auto;
    padding: 0px 130px;
    display: flex;
-   padding: 0px 130px;
-   justify-content: space-between
+   justify-content: space-between;
+   align-items: stretch;
 }
-.product-order a, .product-order input {
-   padding: 14px 22px 13px 20px;
-}
+
 
  
 .order {
@@ -59,16 +185,14 @@ header {
 .logo {
    background-color:#ee3643;
    box-shadow: 0px 5px rgba(0, 0, 0, 0.24);
-   padding: 14px 22px 11px 20px;
 }
+
 /* светлкая область между синими блоками*/
-.header-between{
+/*.header-between{
    display: flex;
    justify-content: space-between;
+   margin: auto;
    align-items: center;
-   justify-content: space-between;
-   margin: 0px 130px 0px 183px;
-   flex-grow: 1;
 }
 
 header p {
@@ -77,8 +201,8 @@ header p {
    font-style: italic;
    color: #ee3643;
    width: 196px;
-   border: 3px solid black
 }
+
 
 .tel-number {
    font-size: 16px;
@@ -105,20 +229,19 @@ header p {
 }
 
 /*навигация*/
-nav {
+/* nav {
    font-size: 17px;
    line-height: 17px;
-   
    background-color:#32425c;
    box-shadow: 0px 5px #293449;
-   display: flex;
-   margin: 40px 130px 0;
-   
+   margin: auto;
 }
 nav ul {
    list-style: none;
-  
+  display: flex;
+   justify-content: space-between;
 }
+
 
 .services-button button:hover,
 nav li:hover {
@@ -133,6 +256,8 @@ nav li:active {
 
 main {
    font-family: 'Cuprum', 'Arial', sans-serif;
+   
+   width: 940px;
 }
 main h2 {
    font-size: 30px;
@@ -140,6 +265,7 @@ main h2 {
    line-height: 30px;
    color: #32425c;
    text-align: left;
+   width:auto;
    
    background-color:#f9f5f0;
 }
@@ -151,7 +277,18 @@ main h2 {
    line-height: 24px;
    text-align: left;
 }
-
+.menu {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: baseline;
+}
+.product-menu {
+   width: 300px;
+}
+.gallery {
+   width:620px;
+}
 .menu div:first-of-type {
    background-color: #ffbf47;
 }
@@ -163,10 +300,14 @@ main h2 {
 }
 .menu div:nth-of-type(4) {
    background-color: #8ed78f;
+   order: 1;
 }
 .menu div:nth-of-type(5) {
    background-color: #ffbf47;
+   order: 2;
 }
+
+
 .product-menu h3 {
    font-size: 24px;
    line-height: 30px;
@@ -196,7 +337,25 @@ main h2 {
    color: white;
 }
 
-
+.goods-list {
+   width:auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.popular-manufacturer ul{
+   width:auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.popular-manufacturer ul li{
+   width: 220px;
+}
+.goods-list li {
+   border: 1px solid #eaeaea;
+}
 .gallery div:first-of-type {
    background-color: rosybrown;
    background-image: url('img/slide-image1.jpg');
@@ -309,7 +468,7 @@ footer a {
 
 /*  inner.html */
 
-.my-account a{
+/*.my-account a{
    font-size: 16px;
    line-height: 18px;
    color: #32425c;
@@ -418,12 +577,12 @@ footer a {
 }
 
 .visually-hidden {
-   visibility: hidden;
+   display: none;
 }
 
 
 /* cтилизация кнопок */
-.product-order input {
+/*.product-order input {
    background-color:rgba(0, 0, 0, 0);
    color: white;
    border-color: rgba(0, 0, 0, 0);
@@ -513,10 +672,7 @@ footer a {
    color:#ee3643;
 }
 
-
-
-
-
+*/
 
 
 
