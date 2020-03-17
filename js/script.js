@@ -7,8 +7,8 @@
         var email = popup.querySelector("[name=email]");
 
 
-   var isStorageSupport = true;
-   var storage = "";
+        var isStorageSupport = true;
+        var storage = "";
 
 
   try {
@@ -16,7 +16,6 @@
   }  catch (err)  {
      isStorageSupport = false;
   }
-
         message.addEventListener("click", function(evt){
            evt.preventDefault(); 
            popup.classList.add("modal-show");
@@ -33,6 +32,9 @@
            popup.classList.remove("modal-show");
            popup.classList.remove("modal-error");
         });
+
+
+
 
          form.addEventListener("submit", function (evt) {
             if (!yourName.value || !email.value){
@@ -59,24 +61,72 @@
 
 
 
+
+      //карта.....
       var linkMap = document.querySelector(".map");
       var bigMap = document.querySelector(".modal-map");
-      var closeMap = bigMap.querySelector(".modal-close");
+     
       linkMap.addEventListener("click", function(amg){
         amg.preventDefault();
         bigMap.classList.add("modal-show");
       });
+     
 
-     closeMap.addEventListener("click", function(amg){
-           amg.preventDefault();
-           bigMap.classList.remove("modal-show");
-        });
+     var modalClose = bigMap.querySelector(".modal-close");
+    modalClose.addEventListener("click", function(){
+    bigMap.classList.remove("modal-show");});
 
-      window.addEventListener("keydown", function(amg){
-         if(key.Code === 27) {
-            amg.preventDefault();
-            if(bigMap.classList.contains("modal-show")){
-               bigMap.classList.remove("modal-show");
+   
+
+       window.addEventListener("keydown", function (evt) {
+            if (evt.keyCode === 27) {
+               evt.preventDefault();
+               if (bigMap.classList.contains("modal-show")) {
+                  bigMap.classList.remove("modal-show");
+               }
             }
-         }
-      });
+         });
+
+    
+//доставка....
+
+var guaranteeButton = document.querySelectorAll(".guarantee");
+var deliveryWindow = document.querySelector(".service-section-delivery");
+var guaranteeWindow = document.querySelector(".service-section-guarantee");
+var creditWindow = document.querySelector(".service-section-credit");
+var creditButton = document.querySelectorAll(".credit");
+var deliveryButton = document.querySelectorAll(".delivery");
+
+
+guaranteeButton.forEach( function(currentValue){
+   currentValue.addEventListener("click", function(gua){
+      gua.preventDefault();
+      guaranteeWindow.classList.add("modal-show1");
+      guaranteeWindow.classList.remove("modal-none");
+      deliveryWindow.classList.add("modal-none");
+      creditWindow.classList.add("modal-none");
+   })
+});
+
+
+creditButton.forEach( function(currentValue){
+   currentValue.addEventListener("click", function(cre){
+      cre.preventDefault();
+      creditWindow.classList.add("modal-show1");
+       creditWindow.classList.remove("modal-none");
+      deliveryWindow.classList.add("modal-none");
+      guaranteeWindow.classList.add("modal-none");
+   })
+});
+
+deliveryButton.forEach( function(currentValue){
+   currentValue.addEventListener("click", function(del){
+      del.preventDefault();
+      guaranteeWindow.classList.add("modal-none");
+      deliveryWindow.classList.add("modal-show1");
+      deliveryWindow.classList.remove("modal-none");
+      creditWindow.classList.add("modal-none");
+      
+   })
+});
+     
