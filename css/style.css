@@ -836,7 +836,7 @@ margin: 0;}
 .service-buttons::after {
    content: "";
    width: 10px;
-   height: 279px;s;
+   height: 279px;
    position: absolute;
    left: 230px;
    top: -46px;
