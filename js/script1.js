@@ -1,4 +1,4 @@
-var modalbuttons = document.querySelectorAll('.buy');
+var modalbuttons = document.querySelectorAll(".buy");
 console.log(modalMessage);
 var modalMessage = document.querySelector(".modal-buy");
 var modalClose = document.querySelector(".modal-close");
