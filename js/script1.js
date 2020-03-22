@@ -5,25 +5,26 @@ var modalClose = document.querySelector(".modal-close");
 console.log(modalClose);
 
 
-   modalbuttons.forEach ( function(currentValue){
-   currentValue.addEventListener("click", function (evt){
+modalbuttons.forEach(function (currentValue) {
+   currentValue.addEventListener("click", function (evt) {
       evt.preventDefault();
-      modalMessage.classList.add("modal-show");      
+      modalMessage.classList.add("modal-show");
    })
 });
 
 
 
-modalClose.addEventListener("click", function(){
-    modalMessage.classList.remove("modal-show");});
+modalClose.addEventListener("click", function () {
+   modalMessage.classList.remove("modal-show");
+});
 
 
 
- window.addEventListener("keydown", function (evt) {
-            if (evt.keyCode === 27) {
-               evt.preventDefault();
-               if (modalMessage.classList.contains("modal-show")) {
-                  modalMessage.classList.remove("modal-show");
-               }
-            }
-         });
+window.addEventListener("keydown", function (evt) {
+   if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (modalMessage.classList.contains("modal-show")) {
+         modalMessage.classList.remove("modal-show");
+      }
+   }
+});
